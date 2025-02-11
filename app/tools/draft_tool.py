@@ -2,6 +2,7 @@ from langchain_ollama import OllamaLLM
 from langchain_core.prompts import PromptTemplate
 
 def get_llm():
+    # temperature=0.3 for slightly creative but consistent output
     return OllamaLLM(model="llama3.2", temperature=0.3)
 
 NOTICE_PROMPT = """
