@@ -3,7 +3,7 @@ from langchain_core.prompts import PromptTemplate
 
 def get_llm():
     # temperature=0.3 for slightly creative but consistent output
-    return OllamaLLM(model="llama3.2", temperature=0.3)
+    return OllamaLLM(model="llama3.2", temperature=0.5)
 
 NOTICE_PROMPT = """
 You are a property manager drafting a professional but firm payment reminder.
