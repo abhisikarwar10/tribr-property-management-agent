@@ -2,6 +2,8 @@ from sqlalchemy import create_engine, Column, Integer, String, Float, Date, text
 from sqlalchemy.orm import DeclarativeBase, Session
 from datetime import date, timedelta
 import random
+import logging
+logger = logging.getLogger(__name__)
 
 # Database setup
 engine = create_engine('sqlite:///payments.db')
