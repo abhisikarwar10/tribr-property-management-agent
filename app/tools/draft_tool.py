@@ -32,7 +32,6 @@ Include rent due date reminder and emergency contact placeholder.
 """
 
 def draft_payment_notice(
-    print(f"[DraftTool] Drafting notice for {tenant_name}")
     tenant_name: str,
     property_id: str,
     amount: float,
