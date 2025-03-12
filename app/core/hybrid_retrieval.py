@@ -16,6 +16,7 @@ def load_vectorstore():
     )
 
 def build_bm25_index(chunks):
+    # BM25 index is rebuilt per query — consider caching for performance
     """Build BM25 index from chunks"""
     tokenized = [chunk.page_content.lower().split() for chunk in chunks]
     bm25 = BM25Okapi(tokenized)
