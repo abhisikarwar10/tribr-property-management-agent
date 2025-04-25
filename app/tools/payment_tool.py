@@ -24,6 +24,7 @@ def create_tables():
     Base.metadata.create_all(engine)
 
 def seed_data():
+    print("[DB] Seeding sample payment data...")
     """Create sample tenant payment data"""
     with Session(engine) as session:
         # Check if data exists
