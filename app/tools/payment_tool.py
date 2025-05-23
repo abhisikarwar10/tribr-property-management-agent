@@ -83,7 +83,6 @@ def get_payment_status(tenant_name: str) -> str:
         return result
     
 def get_overdue_tenants() -> str:
-    """Get all tenants with pending or overdue payments, sorted by days late"""
     """Get all tenants with overdue or pending payments"""
     with Session(engine) as session:
         overdue = session.query(Payment).filter(
