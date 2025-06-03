@@ -73,6 +73,7 @@ def hybrid_retrieve(query: str, vectorstore, all_chunks: list, k: int = 4):
     #     print(doc.page_content[:300])
 
     return results
+    # Debug: print(f"[HybridRetrieve] Returning {len(results)} chunks")
     
 def hybrid_retrieve_with_transform(query: str, vectorstore, all_chunks: list, k: int = 4):
     from app.core.query_transform import transform_query
