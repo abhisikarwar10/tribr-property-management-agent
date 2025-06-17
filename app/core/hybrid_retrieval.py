@@ -22,7 +22,6 @@ def build_bm25_index(chunks):
     return bm25
 
 def hybrid_retrieve(query: str, vectorstore, all_chunks: list, k: int = 4):
-    # k=4 chosen empirically — increase for longer docs
     """
     Combine semantic search + BM25 keyword search
     using Reciprocal Rank Fusion (RRF)
