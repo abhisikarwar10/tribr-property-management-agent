@@ -10,6 +10,7 @@ CHROMA_PATH = "data/processed/chroma_db"
 RAW_DATA_PATH = "data/raw"
 
 def query_lease_document(question: str) -> str:
+    # TODO: add retry logic for vectorstore timeout
     """Query the tenant's lease agreement using RAG"""
     if not os.path.exists(CHROMA_PATH):
         return "No lease document found. Please upload a document first."
