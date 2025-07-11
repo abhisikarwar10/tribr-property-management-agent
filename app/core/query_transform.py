@@ -5,7 +5,6 @@ def get_llm():
     return OllamaLLM(model="llama3.2", temperature=0)
 
 TRANSFORM_PROMPT = """
-# Prompt tuned for Indian real estate legal language
 You are an expert at searching Indian real estate legal documents.
 
 Convert the question below into 3 different plain text search phrases.
