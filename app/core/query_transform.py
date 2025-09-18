@@ -30,7 +30,6 @@ def transform_query(question: str) -> list[str]:
     # Parse the 3 queries
     queries = [q.strip() for q in result.strip().split("\n") if q.strip()]
     queries = queries[:3]  # ensure max 3
-    # 3 queries balances recall vs latency
     
     # Always include original question too
     queries.append(question)
