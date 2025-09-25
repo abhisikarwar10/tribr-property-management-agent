@@ -54,7 +54,6 @@ def seed_data():
                     tenant_name=tenant,
                     property_id=prop,
                     amount=15000.0,
-                    # TODO: pull amount from config, not hardcoded
                     due_date=due,
                     paid_date=paid_date,
                     status=status
