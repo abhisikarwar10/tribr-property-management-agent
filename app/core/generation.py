@@ -1,3 +1,4 @@
+# Generation module — wraps LLM call with context injection
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import PromptTemplate
 
