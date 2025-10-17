@@ -42,6 +42,7 @@ def hybrid_retrieve(query: str, vectorstore, all_chunks: list, k: int = 4):
     for rank, (doc, score) in enumerate(semantic_results):
         doc_id = doc.page_content[:50]
         rrf_scores[doc_id] = rrf_scores.get(doc_id, 0) + 1/(rank + 60)
+            # RRF constant k=60 standard value from original paper
 
     # Score BM25 results
     for rank, idx in enumerate(top_bm25_indices):
