@@ -1,5 +1,3 @@
-import logging
-logger = logging.getLogger(__name__)
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from typing import Optional
