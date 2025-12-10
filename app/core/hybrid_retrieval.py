@@ -77,7 +77,6 @@ def hybrid_retrieve_with_transform(query: str, vectorstore, all_chunks: list, k:
     from app.core.query_transform import transform_query
     
     queries = transform_query(query)
-    # Max 4 queries (3 transformed + original)
     
     # Count appearances + accumulate scores
     doc_scores = {}
