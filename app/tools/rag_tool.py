@@ -7,7 +7,6 @@ from app.core.generation import generate_answer
 from app.core.ingestion import load_documents, chunk_documents
 
 CHROMA_PATH = "data/processed/chroma_db"
-# RAW_DATA_PATH scanned for latest PDF on each query
 RAW_DATA_PATH = "data/raw"
 
 def query_lease_document(question: str) -> str:
