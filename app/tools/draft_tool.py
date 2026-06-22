@@ -17,7 +17,7 @@ Draft a short, professional payment reminder message (WhatsApp style, under 100 
 Be polite but firm. Mention the amount and days overdue. End with contact details placeholder.
 """
 
-WELCOME_PROMPT
+WELCOME_PROMPT = """
 You are a property manager drafting a welcome message for a new tenant.
 
 Tenant Name: {tenant_name}
